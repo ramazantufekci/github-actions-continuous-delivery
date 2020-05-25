@@ -1,0 +1,9 @@
+name: Staging deployment
+
+on: 
+  pull_request:
+    types: [github-actions-continuous-delivery]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
