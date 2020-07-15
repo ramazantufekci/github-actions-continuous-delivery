@@ -42,6 +42,7 @@ jobs:
     - name: npm install, and test
       run: |
         npm install
+        npm audit fix
         npm test
       env:
         CI: true
